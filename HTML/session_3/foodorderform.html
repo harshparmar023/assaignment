@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Food order form</title>
+    </head>
+    <body>
+        <form method="post">
+            username: <input type="text" name="username"><br><br><br>
+
+            food item:
+            <select name="food item" required>
+                <option value="" disabled selected>select food item</option>
+                <option value="pizza">pizza</option>
+                <option value="burger">burger</option>
+                <option value="sandwich">sendwich</option>
+
+            </select><br><br><br>
+
+            quantity: <input type="number" name="number" min="1" required><br><br><br>
+
+            delivery instructions: <textarea name="delivery instructions" required></textarea><br><br><br>
+
+            <!-- Order ID is disabled because users should not be able to change it. -->
+            Order ID:
+            <input type="text" name="orderid" value="ORD12345" disabled>
+            <br><br><br>
+
+
+            <input type="submit" value="place order">       
+        </form>
+    </body>
+</html>
